@@ -1,2 +1,0 @@
--- AlterTable
-ALTER TABLE "Program" ADD COLUMN     "img" VARCHAR(255) NOT NULL DEFAULT '';
