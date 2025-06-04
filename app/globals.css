@@ -1,0 +1,458 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+
+    --make-me-fit-primary-color: rgb(255, 92, 195);
+    --make-me-fit-accent-color: rgb(73, 237, 199);
+    --make-me-fit-accent-color-2: rgb(69, 224, 188);
+    --make-me-fit-neutral-color: rgb(255, 254, 249);
+    --make-me-fit-black-color: rgb(45, 8, 31);
+    --make-me-fit-black-color-rgba: rgba(45, 8, 31, 0.75);
+    --make-me-fit-primary-color-hover: rgb(255, 119, 205);
+    
+    ---2px: max(calc(-2vw * 100 / 1920), calc(-2vh * 100 / 1080)); /* -2px */
+    --1px: max(calc(1vw * 100 / 1920), calc(1vh * 100 / 1080)); /* 1px */
+    --2px: max(calc(2vw * 100 / 1920), calc(2vh * 100 / 1080)); /* 2px */
+    --3px: max(calc(3vw * 100 / 1920), calc(3vh * 100 / 1080)); /* 3px */
+    --5px: max(calc(5vw * 100 / 1920), calc(5vh * 100 / 1080)); /* 5px */
+    --7px: max(calc(7vw * 100 / 1920), calc(7vh * 100 / 1080)); /* 7px */
+    --8px: max(calc(8vw * 100 / 1920), calc(8vh * 100 / 1080)); /* 8px */
+    --10px: max(calc(10vw * 100 / 1920), calc(10vh * 100 / 1080)); /* 10px */
+    --12px: max(calc(12vw * 100 / 1920), calc(12vh * 100 / 1080)); /* 12px */
+    --14px: max(calc(14vw * 100 / 1920), calc(14vh * 100 / 1080)); /* 14px */
+    --16px: max(calc(16vw * 100 / 1920), calc(16vh * 100 / 1080)); /* 16px */
+    --20px: max(calc(20vw * 100 / 1920), calc(20vh * 100 / 1080)); /* 20px */
+    --24px: max(calc(24vw * 100 / 1920), calc(24vh * 100 / 1080)); /* 24px */
+    --32px: max(calc(32vw * 100 / 1920), calc(32vh * 100 / 1080)); /* 32px */
+    --40px: max(calc(40vw * 100 / 1920), calc(40vh * 100 / 1080)); /* 40px */
+    --48px: max(calc(48vw * 100 / 1920), calc(48vh * 100 / 1080)); /* 48px */
+    --64px: max(calc(64vw * 100 / 1920), calc(64vh * 100 / 1080)); /* 64px */
+    --72px: max(calc(72vw * 100 / 1920), calc(72vh * 100 / 1080)); /* 72px */
+    --80px: max(calc(80vw * 100 / 1920), calc(80vh * 100 / 1080)); /* 80px */
+    --128px: max(calc(128vw * 100 / 1920), calc(128vh * 100 / 1080)); /* 128px */
+    --200px: max(calc(200vw * 100 / 1920), calc(200vh * 100 / 1080)); /* 200px */
+    --255px: max(calc(255vw * 100 / 1920), calc(255vh * 100 / 1080)); /* 255px */
+    --365px: max(calc(365vw * 100 / 1920), calc(365vh * 100 / 1080)); /* 365px */
+    --384px: max(calc(384vw * 100 / 1920), calc(384vh * 100 / 1080)); /* 384px */
+    --422px: max(calc(422vw * 100 / 1920), calc(422vh * 100 / 1080)); /* 422px */
+    --493px: max(calc(493vw * 100 / 1920), calc(493vh * 100 / 1080)); /* 493px */
+    --515px: max(calc(515vw * 100 / 1920), calc(515vh * 100 / 1080)); /* 515px */
+    --716px: max(calc(716vw * 100 / 1920), calc(716vh * 100 / 1080)); /* 716px */
+    --750px: max(calc(750vw * 100 / 1920), calc(750vh * 100 / 1080)); /* 750px */
+    --760px: max(calc(760vw * 100 / 1920), calc(760vh * 100 / 1080)); /* 760px */
+    --768px: max(calc(768vw * 100 / 1920), calc(768vh * 100 / 1080)); /* 768px */
+    --932px: max(calc(932vw * 100 / 1920), calc(932vh * 100 / 1080)); /* 932px */
+    --998px: max(calc(998vw * 100 / 1920), calc(998vh * 100 / 1080)); /* 998px */
+    --1543px: max(calc(1543vw * 100 / 1920), calc(1543vh * 100 / 1080)); /* 1543px */
+
+    /* Toate dimensiunile sunt denumite după valoarea lor pe rezoluția 1920x1080 */
+
+    /* Dimensiuni generale */
+    --body-margin: var(--200px); /* 200px */
+    --section-mb: var(--128px); /* 128px */
+
+    --hero-height: var(--998px); /* 998px */
+    --hero-text-width: var(--760px); /* 760px */
+    --hero-accent-text-margin: var(--20px); /* 20px */
+    --hero-header-margin: var(--32px); /* 32px */
+    --hero-p-margin: var(--64px); /* 64px */
+
+    /* Dimensiuni pagina programe */
+    --h1-margin-top: var(--128px); /* 128px */
+    --h1-margin-bottom: var(--16px); /* 16px */
+
+
+    /* Navbar */
+    --nav-link-size: var(--14px); /* 14px */
+    --nav-py: var(--32px); /* 32px */
+  
+
+    /* Dimensiuni paragrafe */
+    --p-size: var(--16px); /* 16px */
+    --hero-p-size: var(--20px); /* 20px */
+    --subheading-size: var(--16px); /* 16px */
+    
+    /* Dimensiuni headere */
+    --h1-size: var(--72px); /* 72px */
+    --h3-size: var(--48px); /* 48px */
+    --h4-size: var(--32px); /* 32px */
+    --h5-size: var(--24px); /* 24px */
+    
+
+    /* Dimensiuni buton hero section */
+    --hero-btn-text-size: var(--32px); /* 32px */
+    
+    --hero-btn-py-size: var(--24px); /* 24px */
+    --hero-btn-px-size: var(--40px); /* 40px */
+    
+    --hero-btn-width: var(--493px); /* 365px */
+
+    /* Dimensiuni testimoniale LP */
+    --testimonial-lp-btn-size: var(--24px); /* 24px */
+    --testimonial-lp-btn-border: var(--3px) solid var(--make-me-fit-primary-color);
+    --testimonial-lp-btn-border-radius: var(--16px); /* 16px */
+    --testimonial-lp-grid-gap: var(--20px); /* 20px */
+    --testimonial-lp-flex-gap: var(--32px); /* 32px */
+    --testimonial-lp-text-gap: var(--8px); /* 8px */
+    --testimonial-lp-btn-width: var(--365px); /* 365px */
+    
+    /* Dimensiuni perk-uri */
+    --perk-margin-x: var(--384px); /* 384px */
+    --perk-margin-t: var(--64px); /* 64px */
+    --perk-margin-b: var(--128px); /* 128px */
+    --perk-width: var(--255px); /* 255px */
+    --perk-icon-mb: var(--16px); /* 16px */
+
+    /* Dimensiuni Perks Inscriere */
+    --inscriere-gap: var(--32px); /* 32px */
+    --inscriere-px: var(--32px); /* 32px */
+    --inscriere-py: var(--48px); /* 48px */
+    --inscriere-checkmark-border: var(--3px) solid var(--make-me-fit-accent-color);
+    --inscriere-crossmark-border: var(--3px) solid var(--make-me-fit-primary-color);
+    --inscriere-border-radius: var(--16px); /* 16px */
+    --inscriere-body-margin: var(--422px); /* 422px */
+    --inscriere-height: var(--716px); /* 716px */
+    --inscriere-p-gap: var(--8px); /* 8px */
+
+
+    /* Dimensiuni cum te ajuta */
+    --cum-te-ajuta-height: var(--515px); /* 515px */
+    --cum-te-ajuta-perk-mb: var(--8px); /* 8px */
+    --cum-te-ajuta-mb: var(--64px); /* 64px */
+    --cum-te-ajuta-width: var(--1520px); /* 1520px */
+    --cum-te-ajuta-grid-gap: var(--128px); /* 128px */
+    --cum-te-ajuta-header-mb: var(--16px); /* 16px */
+
+
+    /* Dimensiuni poze retete program LPs */
+    --poza-large-width: var(--750px); /* 750px */
+    --poza-large-height: var(--493px); /* 493px */
+    --poza-small-size: var(--493px); /* 493px */
+
+
+    /* Dimensiuni bannere programe antrenament */
+    --program-margin-x: var(--200px); /* 200px */
+    --program-width: var(--750px); /* 750px */
+    --program-height: var(--422px); /* 422px */
+    --program-grid-gap: var(--20px); /* 20px */
+
+
+    /* Detalii headings */
+
+    /* Conturul H3, grosime 2px */
+    --heading-lp-text-stroke: var(---2px)  /* -2px */  var(---2px)  /* -2px */  0 var(--make-me-fit-primary-color), var(--2px)  /* 2px */ var(---2px)  /* -2px */ 0 var(--make-me-fit-primary-color), var(---2px)  /* -2px */  var(--2px)  /* 2px */ 0 var(--make-me-fit-primary-color), var(--2px)  /* 2px */  var(--2px)  /* 2px */ 0 var(--make-me-fit-primary-color);
+    
+    /* Umbra H3: 7px 5px 3px var(--accent-color) */
+    --heading-lp-text-shadow: var(--7px) /* 7px */ var(--5px) /* 5px */ var(--3px) /* 3px */ var(--make-me-fit-accent-color);
+
+    --heading-mb: var(--8px); /* 8px */
+    --subheading-mb: var(--64px); /* 64px */
+
+    /* Detalii carduri programe */
+    --checkmark-mr: var(--8px); /* 8px */
+    --checkmark-mt: var(--5px); /* 5px */
+    --checkmark-width: var(--16px); /* 16px */
+    --checkmark-height: var(--16px); /* 16px */
+    --program-name-mb: var(--64px); /* 64px */
+    --program-description-mb: var(--64px); /* 64px */
+    --program-card-border: var(--program-card-border-thickness) solid var(--make-me-fit-primary-color);
+    --program-card-height: var(--1543px); /* 1543px */
+    --benefit-mb: var(--8px); /* 8px */
+    --benefits-container-height: var(--768px); /* 768px */
+    --benefits-container-mb: var(--64px); /* 64px */
+    --program-card-border-thickness: var(--3px); /* 3px */
+    --program-card-shadow: 0px 0px var(--5px) var(--make-me-fit-accent-color); /* 5px */
+    --program-gap: var(--20px); /* 20px */
+    --program-card-px: var(--16px); /* 16px */
+    --program-card-py: var(--64px); /* 64px */
+    --descriere-pret-size: var(--12px); /* 12px */
+
+    /* Highlighted program card */
+    --highlighted-program-card-border: var(--10px) solid var(--make-me-fit-accent-color);
+
+    /* Margin-x pret program card */
+    --program-card-pret-mx: var(--64px); /* 64px */
+
+    /* Detalii butoane program card */
+    --program-card-inscriere-btn-size: var(--24px); /* 24px */
+    --program-card-inscriere-btn-border: var(--3px) solid var(--make-me-fit-primary-color); /* 3px */
+    --program-card-inscriere-btn-border-radius: var(--16px); /* 16px */
+    --program-card-inscriere-btn-shadow: var(--3px) var(--3px) var(--12px) rgba(0,0,0,0.3);
+    --program-card-inscriere-btn-px: var(--40px); /* 40px */
+    --program-card-inscriere-btn-py: var(--24px); /* 24px */
+    --program-card-inscriere-btn-gap: var(--8px); /* 8px */
+
+    /* Detalii preview program */
+    --preview-program-heading-mb: var(--32px); /* 32px */
+    --nota-medicala-mb: var(--8px); /* 8px */
+    --preview-program-perks-mb: var(--16px); /* 16px */
+    --preview-program-grid-gap: var(--128px); /* 128 px */
+    --preview-program-grid-mb: var(--128px); /* 128px */
+    --preview-program-padding: var(--64px); /* 64px */
+
+    /* Detalii poze retete program */
+    --large-photo-meal-width: var(--493px); /* 493px */
+    --small-photo-meal-width: var(--365px); /* 365px */
+
+    /* Detalii preview tutorial video */
+    --play-button-size: var(--128px); /* 128px */
+    --video-frame-radius: var(--48px); /* 48px */
+
+    /* Checkout navbar dimensions */
+    --checkout-nav-py: var(--32px); /* 32px */
+
+    /* Input dimensions */
+    --input-border: var(--1px) solid var(--make-me-fit-primary-color);
+    --input-border-focus-color: var(--make-me-fit-accent-color);
+    --input-border-radius: var(--16px); /* 16px */
+    --input-py: var(--16px); /* 16px */
+    --input-pl: var(--24px); /* 24px */
+    --input-pr: var(--48px); /* 48px */
+    --input-gap: var(--16px); /* 16px */
+    --input-header-mb: var(--32px); /* 32px */
+    --input-section-my: var(--64px); /* 64px */
+    --input-section-py: var(--32px); /* 32px */
+    --input-section-mxw: var(--932px); /* 932px */
+    --tooltip-font-size: var(--8px); /* 8px */
+    --tooltip-width: var(--200px); /* 128px */
+    --tooltip-illustration-width: var(--80px); /* 80px */
+    --tooltip-gap: var(--20px); /* 20px */
+    --tooltip-py: var(--8px); /* 8px */
+    --tooltip-border-radius: var(--16px); /* 16px */
+
+    /* Checkout program details dimensions */
+    --checkout-mr: var(--64px); /* 64px */
+    --checkout-program-details-p: var(--64px); /* 64px */
+    --checkout-p: var(--10px); /* 10px */
+    --checkout-img-mh: var(--64px); /* 64px */
+    --checkout-gap: var(--20px); /* 20px */
+    --checkout-program-mb: var(--64px); /* 64px */
+
+    --checkout-checkbox-border: var(--2px) solid var(--make-me-fit-primary-color);
+    --checkout-checkbox-border-radius: var(--5px); /* 5px */
+    --checkbox-size: var(--24px); /* 24px */
+    --checkbox-checkmark-size: var(--10px); /* 10px */
+    --checkbox-gap: var(--16px); /* 16px */
+    --checkout-lock-icon-size: var(--16px); /* 16px */
+    --checkout-lock-icon-gap: var(--8px); /* 8px */
+    --checkout-secured-gap: var(--8px); /* 8px */
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--make-me-fit-neutral-color);
+}
+
+.make-me-fit-h1 {
+    color: var(--make-me-fit-neutral-color);
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+}
+
+.hero-btn-primary {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    background-color: var(--make-me-fit-primary-color);
+    transition: background-color 150ms ease-in-out;
+    color: var(--make-me-fit-neutral-color);
+}
+
+.hero-btn-primary:hover {
+    background-color: var(--make-me-fit-primary-color-hover);
+}
+
+.hero-btn-accent {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    background-color: var(--make-me-fit-accent-color);
+    transition: background-color 150ms ease-in-out;
+}
+
+.hero-btn-accent:hover {
+    background-color: var(--accent-color-hover);
+}
+
+.nav-links-make-me-fit {
+    color: var(--make-me-fit-neutral-color);
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: rgba(0,0,0,0);
+    text-decoration-thickness: 2px;
+    transition: text-decoration-color 150ms ease-in-out;
+}
+
+.nav-links-make-me-fit:hover {
+    text-decoration-color: var(--make-me-fit-neutral-color);
+}
+
+.nav-make-me-fit {
+    padding: 32px 0px;
+}
+
+.nav-make-me-fit-home {
+    color: var(--make-me-fit-accent-color);
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.nav-make-me-fit-btn-1 {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 12px 24px;
+    background-color: var(--make-me-fit-accent-color-2);
+    color: var(--make-me-fit-neutral-color);
+    transition: background-color 150ms ease-in-out;
+}
+
+.nav-make-me-fit-btn-1:hover {
+    background-color: var(--make-me-fit-accent-color);
+}
+
+.nav-make-me-fit-btn-2 {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: 2px solid var(--make-me-fit-accent-color-2);
+    background-color: transparent;
+    color: var(--make-me-fit-neutral-color);
+    transition: background-color 150ms ease-in-out;
+}
+
+.nav-make-me-fit-btn-2:hover {
+    background-color: var(--make-me-fit-accent-color);
+}
+
+.perk-make-me-fit-h5 {
+    color: var(--make-me-fit-black-color);
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.make-me-fit-h3 {
+    color: var(--make-me-fit-neutral-color);
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.make-me-fit-heading-lp-p {
+    color: var(--make-me-fit-black-color);
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.make-me-fit-nume-program {
+    color: var(--make-me-fit-black-color);
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+}
+
+.make-me-fit-descriere-program {
+    color: var(--make-me-fit-black-color);
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.make-me-fit-pret-program {
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    color: var(--make-me-fit-primary-color);
+}
+
+.make-me-fit-bonus-program {
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    color: var(--make-me-fit-accent-color);
+}
+
+.make-me-fit-pret-program-normal {
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    color: var(--make-me-fit-black-color);
+}
+
+.make-me-fit-descriere-pret-program {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: var(--make-me-fit-black-color);
+}
+
+.make-me-fit-btn-program-highlighted {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: var(--make-me-fit-primary-color);
+    transition: background-color 150ms ease-in-out;
+}
+
+.make-me-fit-btn-program-highlighted:hover {
+    background-color: var(--make-me-fit-primary-color-hover);
+}
+
+.make-me-fit-btn-program{
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: var(--make-me-fit-black-color);
+    background-color: transparent;
+    transition: all 150ms ease-in-out;
+}
+
+.make-me-fit-btn-program:hover {
+    background-color: var(--make-me-fit-primary-color);
+    color: var(--make-me-fit-neutral-color);
+}
+
+.make-me-fit-preview-program-h4 {
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    color: var(--make-me-fit-black-color);
+}
+
+.make-me-fit-preview-program-h4-span {
+    color: var(--make-me-fit-primary-color)
+}
+
+.make-me-fit-mb {
+    margin-bottom: 128px;
+}
+
+.make-me-fit-info-accent-text {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: var(--make-me-fit-accent-color);
+}
+
+.make-me-fit-descriere-testimonial-span {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: var(--make-me-fit-primary-color);
+}
+
+.make-me-fit-testimonial-btn {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: var(--make-me-fit-black-color);
+    background-color: transparent;
+    transition: all 150ms ease-in-out;
+}
+
+.make-me-fit-testimonial-btn:hover {
+    background-color: var(--make-me-fit-primary-color);
+    color: white;
+}
+
+.make-me-fit-hero-btn {
+    color: var(--make-me-fit-neutral-color);
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    border: transparent;
+    background-color: var(--make-me-fit-accent-color-2);
+    transition: background-color 150ms ease-in-out;
+}
+
+.make-me-fit-hero-btn:hover {
+    background-color: var(--make-me-fit-accent-color);
+}
+
+.make-me-fit-hero-btn-mb {
+    margin-bottom: 192px;
+}
+
+/* 
+@media (min-width: 1921px) {
+    body {
+      zoom: 1.33;
+    }
+  } */
